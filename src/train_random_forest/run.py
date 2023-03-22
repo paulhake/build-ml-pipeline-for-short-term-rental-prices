@@ -54,6 +54,7 @@ def go(args):
     ######################################
     # Use run.use_artifact(...).file() to get the train and validation artifact (args.trainval_artifact)
     # and save the returned path in train_local_pat
+    logger.info(f"Fetching the train artifact {args.trainval_artifact}")
     trainval_local_path = run.use_artifact(args.trainval_artifact).file()
     ######################################
 
